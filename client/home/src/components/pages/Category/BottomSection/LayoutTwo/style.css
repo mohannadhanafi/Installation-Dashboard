@@ -1,0 +1,8 @@
+.post-content .entry-img, .post-content .entry-slider, .post-content .entry-video {
+    width: 100%
+}
+
+.editor--img {
+    height: 250px;
+    width: 100%;
+}

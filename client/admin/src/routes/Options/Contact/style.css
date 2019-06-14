@@ -1,0 +1,9 @@
+.activeMenu{
+  color: black !important;
+  background-color:  #c5c5c5 !important;
+  
+}
+
+.activeMenu:hover{
+  background-color: #c5c5c5 !important; 
+}

@@ -1,0 +1,74 @@
+.layout-button{
+    width: 135px;
+    text-align: center;
+}
+
+.layout-image-small{
+    width: 62px;
+    height: 48px;
+    z-index: 99;
+
+}
+
+.layout-image-threeC{
+    margin-top: 30px;
+}
+.example-enter {
+    opacity: 0.01;
+  }
+  
+  .example-enter.example-enter-active {
+    opacity: 1;
+    animation: expand 0.5s ;
+  }
+  
+  .example-leave {
+    opacity: 1;
+  }
+  
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    animation: expandd 0.5s ;
+  }
+  @keyframes expand {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes expandd {
+    from {
+      transform: scale(0);
+      opacity: 1;
+    }
+  }
+
+  .preview-layout{
+    width: 300px;
+    height: 320px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    overflow-y: scroll;
+  }
+  .ant-slider {
+    margin:  unset !important;
+    padding: 9px 0 !important;
+  }
+  .preview-layout img {
+    animation: ease-in 2s;
+  }
+  @keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+}

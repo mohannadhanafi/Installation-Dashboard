@@ -1,0 +1,21 @@
+.steps-content {
+  margin-top: 16px;
+  border-radius: 6px;
+  background-color: #fafafa;
+  height: auto;
+  text-align: center;
+}
+
+.steps-action {
+  margin-top: 24px;
+}
+.installation-body {
+  overflow: auto !important;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  height: 100vh;
+}
+.steps-content .gx-card{
+    box-shadow: unset;
+}

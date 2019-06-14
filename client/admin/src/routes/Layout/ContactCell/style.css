@@ -1,0 +1,112 @@
+.item-drag-drop {
+  position: relative;
+  text-align: center;
+  border: 1px dotted !important;
+  margin-top: 20px;
+/* animation: expand 0.5s; */
+
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+.item-drag-drop:hover .handle {
+  opacity: 1;
+  background-color: #f7f7f7;
+
+}
+.item-drag-drop:hover .title-drag {
+  opacity: 0.5;
+}
+.handle {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  display: flex;
+  opacity: 1;
+  justify-content:flex-end;
+  align-items: center;
+  color: red;
+  transition: all ease-in-out 0.3s;
+}
+.fa-eye-slash,
+.fa-eye {
+  z-index: 99;
+}
+.title-drag {
+  text-transform: uppercase;
+  z-index: 99;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+  font-weight: bold;
+  opacity: 1;
+}
+.no-space{
+  letter-spacing: unset !important;
+}
+.three-names{
+  display: block;
+  font-weight: bold;
+}
+.layout-image {
+  width: 100%;
+}
+
+.image__wrap {
+  position: relative;
+  width: 170px;
+  display: flex;
+  align-content: center;
+}
+
+.image__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.ant-modal {
+  width: 700px !important;
+}
+.layout-buttons .layouts-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  justify-items: center;
+  grid-gap: 20px;
+}
+.layout-buttons .ant-radio-button-wrapper {
+  height: unset !important;
+  width: 200px;
+  border-radius: unset !important;
+  display: flex;
+  align-items: center;
+}
+.layout-buttons .ant-radio-button-wrapper-checked,
+.layout-buttons .ant-radio-button-wrapper-checked:first-child {
+  border: unset !important;
+  border-radius: unset !important;
+  box-shadow: 0px 0px 9px 0 #242222 !important;
+}
